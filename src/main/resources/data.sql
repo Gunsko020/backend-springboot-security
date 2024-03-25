@@ -25,3 +25,6 @@ INSERT INTO television_wallbrackets(television, wallbracket) values (1005, 1001)
  (1004, 1003),
  (1001, 1004),
  (1001, 1006);
+
+INSERT INTO users (username, password, enabled, apikey, email) VALUES ('henk', /*TODO encrypted password (https://bcrypt-generator.com))*/, true, '7847493', "test@testy.tst");
+INSERT INTO authorities (username, authority) VALUES ('henk', 'ROLE_ADMIN');
